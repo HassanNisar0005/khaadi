@@ -1,0 +1,124 @@
+:root {
+  --brand-orange: #f26b38;
+  --light-beige: #f5f5dc;
+  --soft-gray: #f8f9fa;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.hero-img {
+  height: 80vh;
+  object-fit: cover;
+   object-position: center 20%; /* moves the image a bit down */
+}
+
+.carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.btn-brand {
+  background-color: var(--brand-orange);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-weight: 600;
+}
+
+.btn-brand:hover {
+  background-color: #d85a2a;
+  color: white;
+}
+
+.category-card, .category-card-long {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 300px;
+}
+
+.category-card-long {
+    height: 624px; /* Approx height of 2 cards + margin */
+}
+
+.category-card img,
+.category-card-long img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 20%; /* moves the image a bit down */
+  transition: transform 0.3s ease;
+}
+
+
+
+.category-card:hover img, .category-card-long:hover img {
+  transform: scale(1.1);
+}
+
+.category-card div, .category-card-long div {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px black;
+}
+
+.promo-section {
+  background-size: cover;
+  background-position: center;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card .card-img-top {
+  height: 400px;
+  object-fit: cover;
+  object-position: center 20%; /* moves the image a bit down */
+}
+
+.product-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
